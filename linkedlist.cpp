@@ -45,11 +45,9 @@ class LinkedList{
 
 int main(int argc, char** argv) {
     cout<<"Hello World";
-    //write the linked List creation function
 	LinkedList list;
 	int x=11;
 	list.insert(&x);
-	//list->insertFirst(&y);
 	list.traverse();	
 
     return 0;
