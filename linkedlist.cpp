@@ -3,7 +3,6 @@
 using namespace std;
 
 struct Node{
-
 	int       *data;
 	struct Node *next;
 	//struct node *prev;
@@ -15,18 +14,15 @@ class LinkedList{
   		start = NULL;
 	  }
   void insert( int *l_data ){
-
     struct Node *temp , *p;
     temp = new (struct Node);
     temp ->data= l_data;
     temp ->next = NULL;
-    if (start == NULL)
-    {
+    if (start == NULL){
         start = temp;
         start->next = NULL;          
     } 
-    else
-    {
+    else{
         p = start;
         start = temp;
         start->next = p;
